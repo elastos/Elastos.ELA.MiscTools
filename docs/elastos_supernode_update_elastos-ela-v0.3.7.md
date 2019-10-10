@@ -18,7 +18,7 @@ cd ~/node/
 3. 下载节点更新脚本
 
 ```bash
-wget https://raw.githubusercontent.com/modongjie/Elastos.ELA.Supernode/master/build/update_elastos-ela-v0.3.7.sh;
+wget https://raw.githubusercontent.com/elastos/Elastos.ELA.MiscTools/master/script/update_elastos-ela-v0.3.7.sh;
 chmod a+x ~/node/update_elastos-ela-v0.3.7.sh
 ```
 
