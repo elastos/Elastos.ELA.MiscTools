@@ -1,6 +1,6 @@
-# ESC节点升级方案[20211105]
+# ESC-Oracle升级方案[20211105]
 
-elastos-esc-v0.1.4 版本已发布，该版本升级内容主要包括：
+elastos-esc-oracle-v0.1.4 版本已发布，该版本升级内容主要包括：
 - 支持12个CR spv动态感知，ELA高度1034900（北京时间预计2021年11月15日）
 - 支持小额快速到账
 - 支持充值提币充正交易
@@ -43,19 +43,12 @@ chmod a+x ~/node/elastos-esc-v0.1.4.sh
 
 ## 手动升级步骤
 
-1. 下载节点
+1. 下载esc-oracle
 
 ```bash
-https://download.elastos.org/elastos-esc/elastos-esc-v0.1.4
+https://download.elastos.org/elastos-esc-oracle/elastos-esc-oracle-v0.1.4
 ```
 
-2. 关闭节点
-3. 删除数据
-
-```bash
-rm -r -v ~/node/esc/data/header
-rm -r -v ~/node/esc/data/spv_transaction_info.db
-rm -r -v ~/node/esc/data/store
-```
-4. 替换节点
-5. 启动节点
+2. 关闭esc-oracle
+3. 替换esc-oracle的js文件
+4. 启动esc-oracle
