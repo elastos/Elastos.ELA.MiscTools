@@ -33,7 +33,7 @@ update_log()
 #
 # update node binary
 #
-update_node()
+upgrade_node()
 {
   if [ ! -f $SCRIPT_PATH/node.sh ]; then
     echo_error "$SCRIPT_PATH/node.sh is not exist"
@@ -55,9 +55,9 @@ update_node()
 
   echo_info "Starting did..."
   $SCRIPT_PATH/node.sh did start
-  rm -r elastos-did-v0.3.2-linux-x86_64.tgz elastos-did-v0.3.2.sh SHA256SUMS
+  rm -r elastos-did-v0.3.2-linux-x86_64.tgz elastos-did-v0.3.2.sh elastos-did-v0.3.2 SHA256SUMS
 }
 
 SCRIPT_PATH=$(cd $(dirname $BASH_SOURCE); pwd)
-update_node
+upgrade_node
 update_log

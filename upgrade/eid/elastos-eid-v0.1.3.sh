@@ -33,7 +33,7 @@ update_log()
 #
 # update node binary
 #
-update_node()
+upgrade_node()
 {
   if [ ! -f $SCRIPT_PATH/node.sh ]; then
     echo_error "$SCRIPT_PATH/node.sh is not exist"
@@ -61,5 +61,5 @@ update_node()
 }
 
 SCRIPT_PATH=$(cd $(dirname $BASH_SOURCE); pwd)
-update_node
+upgrade_node
 update_log

@@ -7,7 +7,7 @@ ela节点 elastos-did-v0.3.2 版本已发布，该版本升级内容主要包括
 
 > 本次节点升级与release_v0.3.1版本不兼容
 
-## 升级步骤
+## 自动升级步骤
 
 1. 登录服务器
 2. 进入节点目录
@@ -38,3 +38,20 @@ chmod a+x ~/node/elastos-did-v0.3.2.sh
 ```bash
 ~/node/node.sh status
 ```
+
+## 手动升级步骤
+
+1. 下载节点
+
+```
+https://download.elastos.org/elastos-did/elastos-did-v0.3.2
+```
+
+2. 关闭节点
+3. 删除spv数据
+
+```bash
+rm -r -v ~/node/did/elastos_did/data/spv
+```
+4. 替换节点
+5. 启动节点
