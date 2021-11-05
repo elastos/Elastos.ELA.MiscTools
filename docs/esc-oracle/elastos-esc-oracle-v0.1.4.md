@@ -21,18 +21,18 @@ cd ~/node/
 3. 下载节点更新脚本
 
 ```bash
-wget https://raw.githubusercontent.com/elastos/Elastos.ELA.MiscTools/master/upgrade/esc/elastos-esc-v0.1.4.sh
+wget https://raw.githubusercontent.com/elastos/Elastos.ELA.MiscTools/master/upgrade/esc-oracle/elastos-esc-oracle-v0.1.4.sh
 ```
 4. 脚本权限更改
 
 ```bash
-chmod a+x ~/node/elastos-esc-v0.1.4.sh
+chmod a+x ~/node/elastos-esc-oracle-v0.1.4.sh
 ```
 
 5. 执行节点更新脚本
 
 ```bash
-~/node/elastos-esc-v0.1.4.sh
+~/node/elastos-esc-oracle-v0.1.4.sh
 ```
 
 6. 检查节点运行状态

@@ -40,6 +40,11 @@ upgrade_node()
     exit
   fi
 
+  if [ ! -d $SCRIPT_PATH/esc/esc-oracle ]; then
+    echo_error "$SCRIPT_PATH/esc/esc-oracle is not exist"
+    exit
+  fi
+
   echo_info "Downloading esc-oracle..."
   wget https://download.elastos.org/elastos-esc-oracle/elastos-esc-oracle-v0.1.4/elastos-esc-oracle-v0.1.4.tgz
   wget https://download.elastos.org/elastos-esc-oracle/elastos-esc-oracle-v0.1.4/SHA256SUMS
