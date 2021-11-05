@@ -42,7 +42,7 @@ update_config()
   local SUPPORT_INVALID_DEPOSIT="SupportInvalidDeposit: true,"
   local SUPPORT_INVALID_WITHDRAW="SupportInvalidWithdraw: true,"
 
-  echo "Updating arbiter config file..."
+  echo_info "Updating arbiter config file..."
   jq ".Configuration.SideNodeList[1] |= .+ {$SUPPORT_QUICK_RECHARGE} |\
       .Configuration.SideNodeList[1] |= .+ {$SUPPORT_INVALID_DEPOSIT} |\
       .Configuration.SideNodeList[1] |= .+ {$SUPPORT_INVALID_WITHDRAW}" \
