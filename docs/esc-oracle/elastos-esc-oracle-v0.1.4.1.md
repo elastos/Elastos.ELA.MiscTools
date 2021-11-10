@@ -1,4 +1,4 @@
-# The ESC-Oracle v0.1.4 upgrade[20211110]
+# The ESC-Oracle v0.1.4.1 upgrade[20211110]
 
 The elastos-esc-oracle-v0.1.4.1 version has been released. The upgrade mainly includes:
 - Solve the problem of possible loss of precision with withdrawal 
