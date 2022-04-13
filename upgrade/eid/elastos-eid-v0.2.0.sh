@@ -41,8 +41,8 @@ upgrade_node()
   fi
 
   echo_info "Downloading eid..."
-  wget https://download.elastos.org/elastos-eid/elastos-eid-v0.2.0/elastos-eid-v0.2.0-linux-x86_64.tgz
-  wget https://download.elastos.org/elastos-eid/elastos-eid-v0.2.0/SHA256SUMS
+  wget https://download.elastos.io/elastos-eid/elastos-eid-v0.2.0/elastos-eid-v0.2.0-linux-x86_64.tgz
+  wget https://download.elastos.io/elastos-eid/elastos-eid-v0.2.0/SHA256SUMS
   shasum -c SHA256SUMS
   tar xf elastos-eid-v0.2.0-linux-x86_64.tgz
   echo_info "Stopping eid..."

@@ -46,7 +46,7 @@ chmod a+x ~/node/elastos-esc-oracle-v0.1.4.sh
 1. 下载esc-oracle
 
 ```bash
-https://download.elastos.org/elastos-esc-oracle/elastos-esc-oracle-v0.1.4
+https://download.elastos.io/elastos-esc-oracle/elastos-esc-oracle-v0.1.4
 ```
 
 2. 关闭esc-oracle

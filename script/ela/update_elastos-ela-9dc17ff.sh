@@ -30,8 +30,8 @@ update_node()
     exis
   fi
 
-  wget https://download.elastos.org/elastos-ela/elastos-ela-9dc17ff/elastos-ela-9dc17ff-linux-x86_64.tgz
-  wget https://download.elastos.org/elastos-ela/elastos-ela-9dc17ff/SHA256SUMS
+  wget https://download.elastos.io/elastos-ela/elastos-ela-9dc17ff/elastos-ela-9dc17ff-linux-x86_64.tgz
+  wget https://download.elastos.io/elastos-ela/elastos-ela-9dc17ff/SHA256SUMS
   shasum -c SHA256SUMS
   tar xf elastos-ela-9dc17ff-linux-x86_64.tgz
   ~/node/node.sh ela stop

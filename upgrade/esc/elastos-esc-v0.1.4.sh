@@ -41,8 +41,8 @@ upgrade_node()
   fi
 
   echo_info "Downloading esc..."
-  wget https://download.elastos.org/elastos-esc/elastos-esc-v0.1.4/elastos-esc-v0.1.4-linux-x86_64.tgz
-  wget https://download.elastos.org/elastos-esc/elastos-esc-v0.1.4/SHA256SUMS
+  wget https://download.elastos.io/elastos-esc/elastos-esc-v0.1.4/elastos-esc-v0.1.4-linux-x86_64.tgz
+  wget https://download.elastos.io/elastos-esc/elastos-esc-v0.1.4/SHA256SUMS
   shasum -c SHA256SUMS
   tar xf elastos-esc-v0.1.4-linux-x86_64.tgz
   echo_info "Stopping esc..."

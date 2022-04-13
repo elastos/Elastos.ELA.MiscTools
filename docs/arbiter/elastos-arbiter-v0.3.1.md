@@ -41,7 +41,7 @@ chmod a+x ~/node/elastos-arbiter-v0.3.1.sh
 1. Download arbiter node
 
 ```bash
-https://download.elastos.org/elastos-arbiter/elastos-arbiter-v0.3.1
+https://download.elastos.io/elastos-arbiter/elastos-arbiter-v0.3.1
 ```
 
 2. Close arbiter node

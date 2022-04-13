@@ -41,7 +41,7 @@ chmod a+x ~/node/elastos-eid-oracle-v0.1.3.1.sh
 1. Download eid-oracle
 
 ```bash
-https://download.elastos.org/elastos-eid-oracle/elastos-eid-oracle-v0.1.3.1
+https://download.elastos.io/elastos-eid-oracle/elastos-eid-oracle-v0.1.3.1
 ```
 
 2. Close eid-oracle

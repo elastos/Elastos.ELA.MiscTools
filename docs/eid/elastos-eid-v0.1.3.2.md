@@ -40,7 +40,7 @@ chmod a+x ~/node/elastos-eid-v0.1.3.2.sh
 1. Download eid node
 
 ```
-https://download.elastos.org/elastos-eid/elastos-eid-v0.1.3.2
+https://download.elastos.io/elastos-eid/elastos-eid-v0.1.3.2
 ```
 
 2. Stop eid node

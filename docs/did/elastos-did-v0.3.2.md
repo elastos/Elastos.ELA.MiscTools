@@ -44,7 +44,7 @@ chmod a+x ~/node/elastos-did-v0.3.2.sh
 1. 下载节点
 
 ```
-https://download.elastos.org/elastos-did/elastos-did-v0.3.2
+https://download.elastos.io/elastos-did/elastos-did-v0.3.2
 ```
 
 2. 关闭节点

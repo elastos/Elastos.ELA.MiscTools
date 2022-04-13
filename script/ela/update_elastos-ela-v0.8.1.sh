@@ -41,8 +41,8 @@ update_node()
   fi
 
   echo_info "Downloading ela..."
-  wget https://download.elastos.org/elastos-ela/elastos-ela-v0.8.1/elastos-ela-v0.8.1-linux-x86_64.tgz
-  wget https://download.elastos.org/elastos-ela/elastos-ela-v0.8.1/SHA256SUMS
+  wget https://download.elastos.io/elastos-ela/elastos-ela-v0.8.1/elastos-ela-v0.8.1-linux-x86_64.tgz
+  wget https://download.elastos.io/elastos-ela/elastos-ela-v0.8.1/SHA256SUMS
   shasum -c SHA256SUMS
   tar xf elastos-ela-v0.8.1-linux-x86_64.tgz
   echo_info "Stopping ela..."

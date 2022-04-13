@@ -46,8 +46,8 @@ upgrade_node()
   fi
 
   echo_info "Downloading eid-oracle..."
-  wget https://download.elastos.org/elastos-eid-oracle/elastos-eid-oracle-v0.1.3.2/elastos-eid-oracle-v0.1.3.2.tgz
-  wget https://download.elastos.org/elastos-eid-oracle/elastos-eid-oracle-v0.1.3.2/SHA256SUMS
+  wget https://download.elastos.io/elastos-eid-oracle/elastos-eid-oracle-v0.1.3.2/elastos-eid-oracle-v0.1.3.2.tgz
+  wget https://download.elastos.io/elastos-eid-oracle/elastos-eid-oracle-v0.1.3.2/SHA256SUMS
   shasum -c SHA256SUMS
   tar xf elastos-eid-oracle-v0.1.3.2.tgz
   echo_info "Stopping eid-oracle..."

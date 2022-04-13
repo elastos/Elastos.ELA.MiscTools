@@ -44,7 +44,7 @@ chmod a+x ~/node/elastos-eid-v0.1.3.sh
 1. 下载节点
 
 ```
-https://download.elastos.org/elastos-eid/elastos-eid-v0.1.3
+https://download.elastos.io/elastos-eid/elastos-eid-v0.1.3
 ```
 
 2. 关闭节点

@@ -40,7 +40,7 @@ chmod a+x ~/node/elastos-esc-v0.1.4.3.sh
 1. Download esc node
 
 ```bash
-https://download.elastos.org/elastos-esc/elastos-esc-v0.1.4.3
+https://download.elastos.io/elastos-esc/elastos-esc-v0.1.4.3
 ```
 
 2. Close esc node

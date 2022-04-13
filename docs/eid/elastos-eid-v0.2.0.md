@@ -42,7 +42,7 @@ chmod a+x ~/node/elastos-eid-v0.2.0.sh
 1. Download eid node
 
 ```
-https://download.elastos.org/elastos-eid/elastos-eid-v0.2.0
+https://download.elastos.io/elastos-eid/elastos-eid-v0.2.0
 ```
 
 2. Stop eid node

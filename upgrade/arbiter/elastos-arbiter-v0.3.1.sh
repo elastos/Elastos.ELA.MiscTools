@@ -41,8 +41,8 @@ upgrade_node()
   fi
 
   echo_info "Downloading arbiter..."
-  wget https://download.elastos.org/elastos-arbiter/elastos-arbiter-v0.3.1/elastos-arbiter-v0.3.1-linux-x86_64.tgz
-  wget https://download.elastos.org/elastos-arbiter/elastos-arbiter-v0.3.1/SHA256SUMS
+  wget https://download.elastos.io/elastos-arbiter/elastos-arbiter-v0.3.1/elastos-arbiter-v0.3.1-linux-x86_64.tgz
+  wget https://download.elastos.io/elastos-arbiter/elastos-arbiter-v0.3.1/SHA256SUMS
   shasum -c SHA256SUMS
   tar xf elastos-arbiter-v0.3.1-linux-x86_64.tgz
   echo_info "Stopping arbiter..."

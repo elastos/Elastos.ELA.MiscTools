@@ -41,8 +41,8 @@ upgrade_node()
   fi
 
   echo_info "Downloading did..."
-  wget https://download.elastos.org/elastos-did/elastos-did-v0.3.2/elastos-did-v0.3.2-linux-x86_64.tgz
-  wget https://download.elastos.org/elastos-did/elastos-did-v0.3.2/SHA256SUMS
+  wget https://download.elastos.io/elastos-did/elastos-did-v0.3.2/elastos-did-v0.3.2-linux-x86_64.tgz
+  wget https://download.elastos.io/elastos-did/elastos-did-v0.3.2/SHA256SUMS
   shasum -c SHA256SUMS
   tar xf elastos-did-v0.3.2-linux-x86_64.tgz
   echo_info "Stopping did..."

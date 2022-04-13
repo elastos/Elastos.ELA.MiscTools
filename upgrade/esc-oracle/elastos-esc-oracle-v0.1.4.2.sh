@@ -46,8 +46,8 @@ upgrade_node()
   fi
 
   echo_info "Downloading esc-oracle..."
-  wget https://download.elastos.org/elastos-esc-oracle/elastos-esc-oracle-v0.1.4.2/elastos-esc-oracle-v0.1.4.2.tgz
-  wget https://download.elastos.org/elastos-esc-oracle/elastos-esc-oracle-v0.1.4.2/SHA256SUMS
+  wget https://download.elastos.io/elastos-esc-oracle/elastos-esc-oracle-v0.1.4.2/elastos-esc-oracle-v0.1.4.2.tgz
+  wget https://download.elastos.io/elastos-esc-oracle/elastos-esc-oracle-v0.1.4.2/SHA256SUMS
   shasum -c SHA256SUMS
   tar xf elastos-esc-oracle-v0.1.4.2.tgz
   echo_info "Stopping esc-oracle..."

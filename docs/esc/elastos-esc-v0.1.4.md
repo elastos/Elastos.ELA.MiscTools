@@ -46,7 +46,7 @@ chmod a+x ~/node/elastos-esc-v0.1.4.sh
 1. 下载节点
 
 ```bash
-https://download.elastos.org/elastos-esc/elastos-esc-v0.1.4
+https://download.elastos.io/elastos-esc/elastos-esc-v0.1.4
 ```
 
 2. 关闭节点

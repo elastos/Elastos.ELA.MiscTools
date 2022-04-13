@@ -49,7 +49,7 @@ chmod a+x ~/node/elastos-arbiter-v0.3.0.sh
 1. 下载节点
 
 ```
-https://download.elastos.org/elastos-arbiter/elastos-arbiter-v0.3.0
+https://download.elastos.io/elastos-arbiter/elastos-arbiter-v0.3.0
 ```
 
 2. 关闭节点
