@@ -17,6 +17,7 @@ $ cd ~/node/
 ```bash
 $ wget https://raw.githubusercontent.com/elastos/Elastos.ELA.MiscTools/master/upgrade/eid/elastos-eid-v0.2.1.sh
 ```
+
 4. Script permission changes
 
 ```bash

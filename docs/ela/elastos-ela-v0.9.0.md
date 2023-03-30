@@ -19,6 +19,7 @@ $ cd ~/node/
 ```bash
 $ wget https://raw.githubusercontent.com/elastos/Elastos.ELA.MiscTools/master/upgrade/ela/elastos-ela-v0.9.0.sh
 ```
+
 4. Script permission changes
 
 ```bash
