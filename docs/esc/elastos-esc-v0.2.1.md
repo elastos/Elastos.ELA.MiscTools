@@ -1,6 +1,6 @@
 # The ESC v0.2.1 upgrade[20220915]
 
-The elastos-esc-oracle-v0.2.1 version has been released. The upgrade mainly includes:
+The elastos-esc-v0.2.1 version has been released. The upgrade mainly includes:
 - Optimize the logic of miners specifying revenue addresses
 - Optimize the consensus logic of miner nodes
 - Optimize fork reorganization logic

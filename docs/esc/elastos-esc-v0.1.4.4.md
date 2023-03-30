@@ -1,6 +1,6 @@
 # The ESC v0.1.4.4 upgrade[20220415]
 
-The elastos-esc-oracle-v0.1.4.4 version has been released. The upgrade mainly includes:
+The elastos-esc-v0.1.4.4 version has been released. The upgrade mainly includes:
 - Added blacklist function
 
 ## Automatic upgrade steps

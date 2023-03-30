@@ -1,6 +1,6 @@
 # The ESC v0.1.4.3 upgrade[20211229]
 
-The elastos-esc-oracle-v0.1.4.3 version has been released. The upgrade mainly includes:
+The elastos-esc-v0.1.4.3 version has been released. The upgrade mainly includes:
 - Fixed spv not received tx receipt bug
 
 ## Automatic upgrade steps
