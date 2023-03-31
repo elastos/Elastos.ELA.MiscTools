@@ -46,8 +46,6 @@ update_node()
 
   echo_info "Downloading ela..."
   wget https://download.elastos.io/elastos-ela/elastos-ela-v0.9.0/elastos-ela-v0.9.0-linux-x86_64.tgz
-  wget https://download.elastos.io/elastos-ela/elastos-ela-v0.9.0/SHA256SUMS
-  shasum -c SHA256SUMS
   tar xf elastos-ela-v0.9.0-linux-x86_64.tgz
   SHA_ELA_1=$(shasum elastos-ela-v0.9.0-linux-x86_64/ela | cut -d' ' -f1)
 
@@ -71,7 +69,7 @@ update_node()
       update_log "failed"
   fi
 
-  rm -r elastos-ela-v0.9.0-linux-x86_64.tgz elastos-ela-v0.9.0.sh elastos-ela-v0.9.0-linux-x86_64 SHA256SUMS
+  rm -r elastos-ela-v0.9.0-linux-x86_64.tgz elastos-ela-v0.9.0.sh elastos-ela-v0.9.0-linux-x86_64
 }
 
 SCRIPT_PATH=$(cd $(dirname $BASH_SOURCE); pwd)
