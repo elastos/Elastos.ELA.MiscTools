@@ -1,39 +1,22 @@
-# The ESC-Oracle v0.2.3 upgrade[20220415]
+# The ESC-Oracle v0.2.3 upgrade[20230406]
 
 The elastos-esc-oracle-v0.2.3 version has been released. The upgrade mainly includes:
+
 - Support for NFT transactions
 
 ## Automatic upgrade steps
 
 1. Log in to the server
-2. Enter the node directory
+2. Update the latest esc-oracle
 
 ```bash
-$ cd ~/node/
+$ ~/node/node.sh esc-oracle update
 ```
 
-3. Download node update script
+3. Start esc-oracle
 
 ```bash
-$ wget https://raw.githubusercontent.com/elastos/Elastos.ELA.MiscTools/master/upgrade/esc-oracle/elastos-esc-oracle-v0.2.3.sh
-```
-
-4. Script permission changes
-
-```bash
-$ chmod a+x ~/node/elastos-esc-oracle-v0.2.3.sh
-```
-
-5. Execute node update script
-
-```bash
-$ ~/node/elastos-esc-oracle-v0.2.3.sh
-```
-
-6. Check node operating status
-
-```bash
-$ ~/node/node.sh status
+$ ~/node/node.sh esc-oracle start
 ```
 
 ## Manual upgrade steps

@@ -1,39 +1,22 @@
 # The EID-Oracle v0.2.1 upgrade[20230330]
 
 The upgrade mainly includes:
+
 - Support small recharge fast arrival
 
 ## Automatic upgrade steps
 
 1. Log in to the server
-2. Enter the node directory
+2. Update the latest eid-oracle
 
 ```bash
-$ cd ~/node/
+$ ~/node/node.sh eid-oracle update
 ```
 
-3. Download node update script
+3. Start eid-oracle
 
 ```bash
-$ wget https://raw.githubusercontent.com/elastos/Elastos.ELA.MiscTools/master/upgrade/eid-oracle/elastos-eid-oracle-v0.2.1.sh
-```
-
-4. Script permission changes
-
-```bash
-$ chmod a+x ~/node/elastos-eid-oracle-v0.2.1.sh
-```
-
-5. Execute node update script
-
-```bash
-$ ~/node/elastos-eid-oracle-v0.2.1.sh
-```
-
-6. Check node operating status
-
-```bash
-$ ~/node/node.sh status
+$ ~/node/node.sh eid-oracle start
 ```
 
 ## Manual upgrade steps

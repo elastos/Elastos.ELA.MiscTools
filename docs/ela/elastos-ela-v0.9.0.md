@@ -1,41 +1,30 @@
 # The ELA v0.9.0 upgrade[20230330]
 
 The upgrade mainly includes:
-- Support for BPoS register，update and stake related transactions 
-- Support for Schnorr multi-signature transactions 
+
+- Support for BPoS register，update and stake related transactions
+- Support for Schnorr multi-signature transactions
 - Support for NFT transactions
 
 ## Automatic upgrade steps
 
 1. Log in to the server
-2. Enter the node directory
+2. Update the latest ela node
 
 ```bash
-$ cd ~/node/
+$ ~/node/node.sh ela update
 ```
 
-3. Download node update script
+3. Delete the checkpoints directory
 
 ```bash
-$ wget https://raw.githubusercontent.com/elastos/Elastos.ELA.MiscTools/master/upgrade/ela/elastos-ela-v0.9.0.sh
+$ rm -r ~/node/ela/elastos/data/checkpoints
 ```
 
-4. Script permission changes
+4. Start ela node
 
-```bash
-$ chmod a+x ~/node/elastos-ela-v0.9.0.sh
-```
-
-5. Execute node update script
-
-```bash
-$ ~/node/elastos-ela-v0.9.0.sh
-```
-
-6. Check node operating status
-
-```bash
-$ ~/node/node.sh status
+    The first time you start the node will initialize the node, after it is completed, it will synchronize the block height, this process will be determined by the server memory to complete the time, please wait patiently...```bash
+$ ~/node/node.sh ela start
 ```
 
 ## Manual upgrade steps
@@ -55,3 +44,5 @@ $ rm -r ~/node/ela/elastos/data/checkpoints
 ```
 
 5. Start ela node
+
+    The first time you start the node will initialize the node, after it is completed, it will synchronize the block height, this process will be determined by the server memory to complete the time, please wait patiently...
