@@ -24,6 +24,7 @@ $ rm -r ~/node/ela/elastos/data/checkpoints
 4. Start ela node
 
     The first time you start the node will initialize the node, after it is completed, it will synchronize the block height, this process will be determined by the server memory to complete the time, please wait patiently...```bash
+```bash
 $ ~/node/node.sh ela start
 ```
 
