@@ -53,7 +53,7 @@ cd ~/node/
 
 2. Close esc-oracle
 ```bash
-  ~/node.sh esc-oracle stop
+  ~/node/node.sh esc-oracle stop
 ```   
 4. Replace the js file of esc-oracle
 ```bash
