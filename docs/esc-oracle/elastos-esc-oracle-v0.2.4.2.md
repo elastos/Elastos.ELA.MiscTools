@@ -61,7 +61,7 @@ cd ~/node/
 ```   
 6. Start esc-oracle
 ```bash
-   ~/node/node.sh esc start
+   ~/node/node.sh esc-oracle start
 ```
 7. Delete download file and folder
 ```bash
