@@ -40,8 +40,8 @@ upgrade_node()
     exit
   fi
 
-  if [ ! -d $SCRIPT_PATH/esc/esc-oracle ]; then
-    echo_error "$SCRIPT_PATH/esc/esc-oracle is not exist"
+  if [ ! -d $SCRIPT_PATH/esc/esc-oracle ] && [ ! -d $SCRIPT_PATH/esc-oracle]; then
+    echo_error "$SCRIPT_PATH/esc/esc-oracle is not exist and $SCRIPT_PATH/esc-oracle is not exist"
     exit
   fi
 
@@ -53,7 +53,10 @@ upgrade_node()
   echo_info "Stopping esc-oracle..."
   $SCRIPT_PATH/node.sh esc-oracle stop
   echo_info "Replacing esc-oracle..."
-  cp -v elastos-esc-oracle-v0.2.4.2/getPledgeBillBurnLogsByHeight.js $SCRIPT_PATH/esc/esc-oracle/
+  if [ -d $SCRIPT_PATH/esc/esc-oracle ]; then
+      cp -v elastos-esc-oracle-v0.2.4.2/getPledgeBillBurnLogsByHeight.js $SCRIPT_PATH/esc/esc-oracle/
+  if [ -d $SCRIPT_PATH/esc-oracle ]; then 
+      cp -v elastos-esc-oracle-v0.2.4.2/getPledgeBillBurnLogsByHeight.js $SCRIPT_PATH/esc-oracle/
   echo_info "Starting esc-oracle..."
   $SCRIPT_PATH/node.sh esc-oracle start
   rm -r elastos-esc-oracle-v0.2.4.2.tgz elastos-esc-oracle-v0.2.4.2.sh elastos-esc-oracle-v0.2.4.2 SHA256SUMS
