@@ -57,6 +57,7 @@ cd ~/node/
 ```   
 4. Replace the js file of esc-oracle
 note:
+
 if only node/esc-oracle folder is exist
 ```bash
    cp -v elastos-esc-oracle-v0.2.4.2/getPledgeBillBurnLogsByHeight.js ~/node/esc-oracle/
