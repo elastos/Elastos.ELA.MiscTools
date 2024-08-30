@@ -37,6 +37,12 @@ chmod a+x ~/node/elastos-esc-oracle-v0.2.4.2.sh
 ```
 
 ## Manual upgrade steps
+1. Log in to the server
+2. Enter the node directory
+
+```bash
+cd ~/node/
+```
 
 1. Download esc-oracle and unzip file
 
@@ -56,4 +62,9 @@ chmod a+x ~/node/elastos-esc-oracle-v0.2.4.2.sh
 6. Start esc-oracle
 ```bash
    ~/node/node.sh esc start
+```
+7. Delete download file and folder
+```bash
+   rm -rf elastos-esc-oracle-v0.2.4.2.tgz
+   rm -rf elastos-esc-oracle-v0.2.4.2
 ``` 
