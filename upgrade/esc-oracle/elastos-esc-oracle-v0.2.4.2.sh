@@ -55,8 +55,10 @@ upgrade_node()
   echo_info "Replacing esc-oracle..."
   if [ -d $SCRIPT_PATH/esc/esc-oracle ]; then
       cp -v elastos-esc-oracle-v0.2.4.2/getPledgeBillBurnLogsByHeight.js $SCRIPT_PATH/esc/esc-oracle/
+  fi    
   if [ -d $SCRIPT_PATH/esc-oracle ]; then 
       cp -v elastos-esc-oracle-v0.2.4.2/getPledgeBillBurnLogsByHeight.js $SCRIPT_PATH/esc-oracle/
+  fi    
   echo_info "Starting esc-oracle..."
   $SCRIPT_PATH/node.sh esc-oracle start
   rm -r elastos-esc-oracle-v0.2.4.2.tgz elastos-esc-oracle-v0.2.4.2.sh elastos-esc-oracle-v0.2.4.2 SHA256SUMS
