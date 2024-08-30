@@ -56,6 +56,7 @@ cd ~/node/
   ~/node/node.sh esc-oracle stop
 ```   
 4. Replace the js file of esc-oracle
+   
 note:
 
 if only node/esc-oracle folder is exist
