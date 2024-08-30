@@ -40,7 +40,7 @@ upgrade_node()
     exit
   fi
 
-  if [ ! -d $SCRIPT_PATH/esc/esc-oracle ] && [ ! -d $SCRIPT_PATH/esc-oracle]; then
+  if [ ! -d $SCRIPT_PATH/esc/esc-oracle ] && [ ! -d $SCRIPT_PATH/esc-oracle ]; then
     echo_error "$SCRIPT_PATH/esc/esc-oracle is not exist and $SCRIPT_PATH/esc-oracle is not exist"
     exit
   fi
