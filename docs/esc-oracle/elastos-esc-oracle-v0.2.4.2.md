@@ -57,7 +57,7 @@ cd ~/node/
 ```   
 4. Replace the js file of esc-oracle
 ```bash
-   cp -v elastos-esc-oracle-v0.2.4.2/getPledgeBillBurnLogsByHeight.js ~/node/esc/esc-oracle/
+   cp -v elastos-esc-oracle-v0.2.4.2/getPledgeBillBurnLogsByHeight.js ~/node/esc-oracle/
 ```   
 6. Start esc-oracle
 ```bash
