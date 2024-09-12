@@ -3,6 +3,8 @@
 The upgrade mainly includes:
 
 - Fix some node height out of sync issues
+- Add block confirmation initiator to record transactions
+- Delayed distribution of profits to the next block
    
 ## Automatic upgrade of the specified version
 ## Note: the default working directory for automatic upgrade is "~/node/ela" and the sponsor file will be placed in this directory by default,if your working directory is not this working directory, you can use the following two methods:
