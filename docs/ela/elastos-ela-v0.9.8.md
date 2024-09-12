@@ -48,7 +48,7 @@ $ ~/node/node.sh status
 }
 
 2>Adopting manual upgrade
-
+## Upgrade Steps
 1. Log in to the server
 2. Enter the node directory
 
@@ -95,11 +95,20 @@ https://download.elastos.io/elastos-ela/elastos-ela-v0.9.8
 ```bash
 $ rm -r ~/node/ela/elastos/data/checkpoints
 ```
+5. Copy the "sponsors" file to the working directory of the ela node or configure the config.json file using "SponsorsFilePath" to specify the "sponsors" file path, refer to the example as below
+   
+{
+    "Configuration": {
+        "DPoSConfiguration": {
+            "SponsorsFilePath": "/home/ela-4/node/sponsors"
+        }
+    }
+}
 
-5. Start ela node
+6. Start ela node
 
    The first time you start the node will initialize the node, after it is completed, it will synchronize the block
    height, this process will be determined by the server memory to complete the time, please wait patiently...
 
-6. Check node status
+7. Check node status
 
