@@ -8,7 +8,7 @@ The upgrade mainly includes:
    
 ## Automatic upgrade of the specified version
 ## Note: the default working directory for automatic upgrade is "~/node/ela" and the sponsor file will be placed in this directory by default,if your working directory is not this working directory, you can use the following two methods:
-1>Configure the config.json file and use "Sponsors File Path" to specify the location of the sponsors file, as shown in the following example:
+1>Configure the "config.json" file of the ela node and use "Sponsors File Path" to specify the location of the sponsors file, as shown in the following example:
 
 {
     "Configuration": {
@@ -66,7 +66,7 @@ https://download.elastos.io/elastos-ela/elastos-ela-v0.9.8
 ```bash
 $ rm -r ~/node/ela/elastos/data/checkpoints
 ```
-5. Copy the "sponsors" file to the working directory of the ela node or configure the config.json file using "SponsorsFilePath" to specify the "sponsors" file path, refer to the example as below
+5. Copy the "sponsors" file to the working directory of the ela node or configure the "config.json" file of ela node using "SponsorsFilePath" to specify the "sponsors" file path, refer to the example as below
    
 {
     "Configuration": {
