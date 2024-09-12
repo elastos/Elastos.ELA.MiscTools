@@ -47,6 +47,6 @@ chmod a+x ~/node/elastos-esc-v0.2.5.sh
 https://download.elastos.io/elastos-esc/elastos-esc-v0.2.5
 ```
 
-2. Close esc node
+2. Stop esc node
 3. Replace esc node
 4. Start esc node
