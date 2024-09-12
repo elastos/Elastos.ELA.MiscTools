@@ -3,38 +3,7 @@
 The upgrade mainly includes:
 
 - Fix some node height out of sync issues
-
-## Automatic upgrade using node.sh
-
-1. Log in to the server
-2. Update the latest ela node
-
-```bash
-$ ~/node/node.sh ela update
-```
-
-3. Delete the checkpoints directory
-
-```bash
-$ rm -r ~/node/ela/elastos/data/checkpoints
-```
-
-4. Start ela node
-
-   The first time you start the node will initialize the node, after it is completed, it will synchronize the block
-   height, this process will be determined by the server memory to complete the time, please wait patiently...
-
-```bash
-$ ~/node/node.sh ela start
-```
-
-5. Check node status
-
-```bash
-$ ~/node/node.sh status
-```
-
-
+   
 ## Automatic upgrade of the specified version
 ## Note: the default working directory for automatic upgrade is "~/node/ela" and the sponsor file will be placed in this directory by default,if your working directory is not this working directory, you can use the following two methods:
 1>Configure the config.json file and use "Sponsors File Path" to specify the location of the sponsors file, as shown in the following example:
