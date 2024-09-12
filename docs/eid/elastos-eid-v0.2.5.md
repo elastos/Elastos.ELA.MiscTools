@@ -1,8 +1,8 @@
 # The EID v0.2.5 upgrade[20240918]
 
 The upgrade mainly includes:
-- up
-- fix bugs
+- Upgrade to Shanghai version
+- Fix bugs
 ## Automatic upgrade steps
 
 1. Log in to the server
