@@ -6,6 +6,8 @@ The elastos-esc-v0.2.5 version has been released. The upgrade mainly includes:
 - Fix bugs 
 
 ## Automatic upgrade steps
+## Note：
+Automatic upgrade is applicable to ESC nodes that meet a fixed directory structure: node files exist in the directory:~/node/esc, if your esc node directory structure is not met, please use manual upgrade。
 
 1. Log in to the server
 2. Enter the node directory
