@@ -1,4 +1,4 @@
-# The ELA v0.9.7 upgrade[20230430]
+# The ELA v0.9.8 upgrade[20241010]
 
 The upgrade mainly includes:
 
@@ -36,6 +36,18 @@ $ ~/node/node.sh status
 
 
 ## Automatic upgrade of the specified version
+## Note: the default working directory for automatic upgrade is "~/node/ela" and the sponsor file will be placed in this directory by default,if your working directory is not this working directory, you can use the following two methods:
+1>Configure the config.json file and use "Sponsors File Path" to specify the location of the sponsors file, as shown in the following example:
+
+{
+    "Configuration": {
+        "DPoSConfiguration": {
+            "SponsorsFilePath": "/home/ela-4/node/sponsors"
+        }
+    }
+}
+
+2>Adopting manual upgrade
 
 1. Log in to the server
 2. Enter the node directory
@@ -47,19 +59,19 @@ cd ~/node/
 3. Download node update script
 
 ```bash
-wget https://raw.githubusercontent.com/elastos/Elastos.ELA.MiscTools/master/upgrade/ela/elastos-ela-v0.9.7.sh
+wget https://raw.githubusercontent.com/elastos/Elastos.ELA.MiscTools/master/upgrade/ela/elastos-ela-v0.9.8.sh
 ```
 
 4. Script permission changes
 
 ```bash
-chmod a+x ~/node/elastos-ela-v0.9.7.sh
+chmod a+x ~/node/elastos-ela-v0.9.8.sh
 ```
 
 5. Execute node update script
 
 ```bash
-~/node/elastos-ela-v0.9.7.sh
+~/node/elastos-ela-v0.9.8.sh
 ```
 
 6. Check node status
@@ -73,7 +85,7 @@ $ ~/node/node.sh status
 1. Download ela node
 
 ```
-https://download.elastos.io/elastos-ela/elastos-ela-v0.9.7
+https://download.elastos.io/elastos-ela/elastos-ela-v0.9.8
 ```
 
 2. Stop ela node
