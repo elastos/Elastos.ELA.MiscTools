@@ -1,4 +1,4 @@
-# The EID v0.2.5 upgrade[20240918]
+# The EID v0.2.3 upgrade[20240918]
 
 The upgrade mainly includes:
 - Upgrade to Shanghai version
@@ -16,18 +16,18 @@ cd ~/node/
 3. Download node update script
 
 ```bash
-wget https://raw.githubusercontent.com/elastos/Elastos.ELA.MiscTools/master/upgrade/eid/elastos-eid-v0.2.5.sh
+wget https://raw.githubusercontent.com/elastos/Elastos.ELA.MiscTools/master/upgrade/eid/elastos-eid-v0.2.3.sh
 ```
 4. Script permission changes
 
 ```bash
-chmod a+x ~/node/elastos-eid-v0.2.5.sh
+chmod a+x ~/node/elastos-eid-v0.2.3.sh
 ```
 
 5. Execute node update script
 
 ```bash
-~/node/elastos-eid-v0.2.5.sh
+~/node/elastos-eid-v0.2.3.sh
 ```
 
 6. Check node operating status
@@ -41,7 +41,7 @@ chmod a+x ~/node/elastos-eid-v0.2.5.sh
 1. Download eid node
 
 ```
-https://download.elastos.io/elastos-eid/elastos-eid-v0.2.5
+https://download.elastos.io/elastos-eid/elastos-eid-v0.2.3
 ```
 
 2. Stop eid node
