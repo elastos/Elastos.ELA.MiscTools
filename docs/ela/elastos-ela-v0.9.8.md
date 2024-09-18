@@ -54,7 +54,9 @@ https://download.elastos.io/elastos-ela/elastos-ela-v0.9.8
 ```bash
 $ rm -r ~/node/ela/elastos/data/checkpoints
 ```
-5. **Copy the "sponsors" file from "elastos-ela/elastos-ela-v0.9.8" to the working directory of the ela node or configure the "config.json" file of ela node using "SponsorsFilePath" to specify the "sponsors" file path**
+5. **copy  "sponsors" file to working directory of the ela node**
+   
+  Copy the "sponsors" file from "elastos-ela/elastos-ela-v0.9.8" to the working directory of the ela node or configure the "config.json" file of ela node using "SponsorsFilePath" to specify the "sponsors" file path
    
 ```json  
 {
