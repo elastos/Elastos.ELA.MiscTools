@@ -40,10 +40,10 @@ $ ~/node/node.sh status
 ```
 
 ## Manual upgrade steps
-Note: the default working directory for automatic upgrade is "~/node/ela" and the sponsor file will be placed in this directory by default,if your working directory is not this working directory, you can use the method as below:
+Note: the default working directory is "~/node/ela" and the sponsor file will be placed in this directory by default,if your working directory is not this working directory, you can use the method as below:
 
-1>Configure the "config.json" file of the ela node and use "Sponsors File Path" to specify the location of the sponsors file, as shown in the following example:
-
+Configure the "config.json" file of the ela node and use "Sponsors File Path" to specify the location of the sponsors file, as shown in the following example:
+```json
 {
     "Configuration": {
         "DPoSConfiguration": {
@@ -51,7 +51,7 @@ Note: the default working directory for automatic upgrade is "~/node/ela" and th
         }
     }
 }
-
+```
 1. Download ela node
 
 ```
@@ -65,8 +65,8 @@ https://download.elastos.io/elastos-ela/elastos-ela-v0.9.8
 ```bash
 $ rm -r ~/node/ela/elastos/data/checkpoints
 ```
-5. Copy the "sponsors" file from "elastos-ela/elastos-ela-v0.9.8" to the working directory of the ela node or configure the "config.json" file of ela node using "SponsorsFilePath" to specify the "sponsors" file path, refer to the example as below
-   
+5. Copy the "sponsors" file from "elastos-ela/elastos-ela-v0.9.8" to the working directory of the ela node or configure the "config.json" file of ela node using "SponsorsFilePath" to specify the "sponsors" file path, refer to the example as below:
+```json   
 {
     "Configuration": {
         "DPoSConfiguration": {
@@ -74,7 +74,7 @@ $ rm -r ~/node/ela/elastos/data/checkpoints
         }
     }
 }
-
+```
 6. Start ela node
 
    The first time you start the node will initialize the node, after it is completed, it will synchronize the block
