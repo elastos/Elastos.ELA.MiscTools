@@ -7,7 +7,7 @@ The upgrade mainly includes:
 - Delayed distribution of profits to the next block
    
 ## Automatic upgrade of the specified version
-## Note: the default working directory for automatic upgrade is "~/node/ela" and the sponsor file will be placed in this directory by default,if your working directory is not this working directory, you can use the following two methods:
+Note: the default working directory for automatic upgrade is "~/node/ela" and the sponsor file will be placed in this directory by default,if your working directory is not this working directory, you can use the following two methods:
 1>Configure the "config.json" file of the ela node and use "Sponsors File Path" to specify the location of the sponsors file, as shown in the following example:
 
 {
