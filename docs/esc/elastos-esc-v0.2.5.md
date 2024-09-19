@@ -10,33 +10,16 @@ The elastos-esc-v0.2.5 version has been released. The upgrade mainly includes:
 Automatic upgrade is applicable to ESC nodes that meet a fixed directory structure: node files exist in the directory:~/node/esc, if your esc node directory structure is not met, please use manual upgrade。
 
 1. Log in to the server
-2. Enter the node directory
+2. Update the latest esc node
 
 ```bash
-cd ~/node/
+$ ~/node/node.sh esc update
 ```
 
-3. Download node update script
+3. Start esc node
 
 ```bash
-wget https://raw.githubusercontent.com/elastos/Elastos.ELA.MiscTools/master/upgrade/esc/elastos-esc-v0.2.5.sh
-```
-4. Script permission changes
-
-```bash
-chmod a+x ~/node/elastos-esc-v0.2.5.sh
-```
-
-5. Execute node update script
-
-```bash
-~/node/elastos-esc-v0.2.5.sh
-```
-
-6. Check node operating status
-
-```bash
-~/node/node.sh status
+$ ~/node/node.sh esc start
 ```
 
 ## Manual upgrade steps
