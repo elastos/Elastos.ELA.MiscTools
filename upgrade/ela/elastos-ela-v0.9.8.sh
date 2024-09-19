@@ -44,7 +44,7 @@ update_node()
     exit
   fi
   
-  if [ "$(uname -m)" = "armv6l" ] || [ "$(uname -m)" = "armv7l" ] || [ "$(uname -m)" = "aarch64" ]; then
+  if [ "$(uname -m)" == "armv6l" ] || [ "$(uname -m)" == "armv7l" ] || [ "$(uname -m)" == "aarch64" ]; then
     echo "The current system architecture is ARM"
     echo_info "Downloading ela..."
     wget https://download.elastos.io/elastos-ela/elastos-ela-v0.9.8/elastos-ela-v0.9.8-linux-arm64.tgz
