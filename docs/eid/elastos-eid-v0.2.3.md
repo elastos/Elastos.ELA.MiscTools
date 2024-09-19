@@ -5,36 +5,19 @@ The upgrade mainly includes:
 - Fix bugs
 ## Automatic upgrade steps
 ## Note:Automatic upgrade is applicable to EID node that meet a fixed directory structure: node files exist in the directory:~/node/eid, if your eid node directory structure is not met, please use manual upgrade。
-
 1. Log in to the server
-2. Enter the node directory
+2. Update the latest eid node
 
 ```bash
-cd ~/node/
+$ ~/node/node.sh eid update
 ```
 
-3. Download node update script
+3. Start eid node
 
 ```bash
-wget https://raw.githubusercontent.com/elastos/Elastos.ELA.MiscTools/master/upgrade/eid/elastos-eid-v0.2.3.sh
-```
-4. Script permission changes
-
-```bash
-chmod a+x ~/node/elastos-eid-v0.2.3.sh
+$ ~/node/node.sh eid start
 ```
 
-5. Execute node update script
-
-```bash
-~/node/elastos-eid-v0.2.3.sh
-```
-
-6. Check node operating status
-
-```bash
-~/node/node.sh status
-```
 
 ## Manual upgrade steps
 
