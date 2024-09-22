@@ -42,7 +42,7 @@ $ ~/node/node.sh status
 1. Download ela node
 
 ```
-https://download.elastos.io/elastos-ela/elastos-ela-v0.9.8_sponsors
+https://download.elastos.io/elastos-ela/elastos-ela-v0.9.8/sponsor/sponsors.tgz
 ```
 
 2. Stop ela node
