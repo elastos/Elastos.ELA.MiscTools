@@ -55,7 +55,7 @@ update_node()
       echo_info "sponsors not exist"
       cp -vf sponsors $SCRIPT_PATH/ela/ 
     else
-      rm -r $SCRIPT_PATH/ela/sponsors
+      rm -rf $SCRIPT_PATH/ela/sponsors
       cp -vf sponsors $SCRIPT_PATH/ela/  
     fi
     
