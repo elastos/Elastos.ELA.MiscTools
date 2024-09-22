@@ -2,7 +2,7 @@
 
 The update mainly includes:
 
-- Replace sponsors file
+- Update sponsors file
   
 ## Automatic  update sponsors file
 ## Update Steps
