@@ -4,7 +4,7 @@ The upgrade mainly includes:
 
 - Replace sponsors file
   
-## Automatic upgrade replace sponsors file
+## Automatic upgrade update sponsors file
 ## Upgrade Steps
 1. Log in to the server
 2. Enter the node directory
