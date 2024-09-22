@@ -58,7 +58,7 @@ update_node()
     cp -v elastos-ela-v0.9.8-linux-arm64/sponsors $SCRIPT_PATH/ela/
     if [ -d "$SCRIPT_PATH/ela/elastos/data/checkpoints" ]; then
       echo_info "The checkpoints file is being deleted, it will take a long time to initialize the data when starting the ELA node for the first time, please don’t worry!"
-      rm -r $SCRIPT_PATH/ela/elastos/data/checkpoints
+      rm -rf $SCRIPT_PATH/ela/elastos/data/checkpoints
     fi
     
     echo_info "Starting ela..."
@@ -70,7 +70,7 @@ update_node()
     else
       update_log "failed"
     fi
-    rm -r elastos-ela-v0.9.8-linux-arm64.tgz elastos-ela-v0.9.8.sh elastos-ela-v0.9.8-linux-arm64
+    rm -rf elastos-ela-v0.9.8-linux-arm64.tgz elastos-ela-v0.9.8.sh elastos-ela-v0.9.8-linux-arm64
     
   else
     echo "The current system architecture x86_64 by default。"
@@ -87,7 +87,7 @@ update_node()
     cp -v elastos-ela-v0.9.8-linux-x86_64/sponsors $SCRIPT_PATH/ela/
     if [ -d "$SCRIPT_PATH/ela/elastos/data/checkpoints" ]; then
       echo_info "The checkpoints file is being deleted, it will take a long time to initialize the data when starting the ELA node for the first time, please don’t worry!"
-      rm -r $SCRIPT_PATH/ela/elastos/data/checkpoints
+      rm -rf $SCRIPT_PATH/ela/elastos/data/checkpoints
     fi
     echo_info "Starting ela..."
     $SCRIPT_PATH/node.sh ela start
@@ -97,7 +97,7 @@ update_node()
     else
       update_log "failed"
     fi
-    rm -r elastos-ela-v0.9.8-linux-x86_64.tgz elastos-ela-v0.9.8.sh elastos-ela-v0.9.8-linux-x86_64    
+    rm -rf elastos-ela-v0.9.8-linux-x86_64.tgz elastos-ela-v0.9.8.sh elastos-ela-v0.9.8-linux-x86_64    
   fi
 }
 
