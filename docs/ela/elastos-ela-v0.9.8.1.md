@@ -39,7 +39,7 @@ $ ~/node/node.sh status
 
 ## Manual upgrade steps
 
-1. Download ela node
+1. Download sponsors file
 
 ```
 wget https://download.elastos.io/elastos-ela/elastos-ela-v0.9.8/sponsor/sponsors.tgz
