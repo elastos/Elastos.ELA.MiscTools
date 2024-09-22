@@ -51,7 +51,7 @@ update_node()
     echo_info "Stopping ela..."
     $SCRIPT_PATH/node.sh ela stop
     echo_info "Replacing sponsors..."
-    cp -v sponsors $SCRIPT_PATH/ela/
+    cp -vf sponsors $SCRIPT_PATH/ela/
     if [ -d "$SCRIPT_PATH/ela/elastos/data/checkpoints" ]; then
       echo_info "The checkpoints file is being deleted, it will take a long time to initialize the data when starting the ELA node for the first time, please don’t worry!"
       rm -r $SCRIPT_PATH/ela/elastos/data/checkpoints
