@@ -27,9 +27,9 @@ update_log()
   echo_info "Update sponsors">>$SCRIPT_PATH/update.log
   echo_info "">>$SCRIPT_PATH/update.log
   if [ $1 == "succeeded" ]; then
-      echo_info "$time update of ela succeeded!"
+      echo_info "$time update of sponsors succeeded!"
   else
-      echo_error "$time update of ela failed!"
+      echo_error "$time update of sponsors failed!"
   fi
   echo_info "Please check update log via command: cat $SCRIPT_PATH/update.log"
 }
