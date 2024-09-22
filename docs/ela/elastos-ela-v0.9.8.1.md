@@ -13,7 +13,7 @@ The update mainly includes:
 cd ~/node/
 ```
 
-3. Download node update script
+3. Download  update sponsors file script
 
 ```bash
 wget https://raw.githubusercontent.com/elastos/Elastos.ELA.MiscTools/master/upgrade/ela/elastos-ela-v0.9.8.1.sh
