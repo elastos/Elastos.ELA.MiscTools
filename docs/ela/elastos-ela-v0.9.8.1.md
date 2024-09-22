@@ -1,11 +1,11 @@
-# The ELA v0.9.8.1 upgrade[20240922]
+# The ELA v0.9.8.1 update sponsors file [20240922]
 
-The upgrade mainly includes:
+The update mainly includes:
 
 - Replace sponsors file
   
-## Automatic upgrade update sponsors file
-## Upgrade Steps
+## Automatic  update sponsors file
+## Update Steps
 1. Log in to the server
 2. Enter the node directory
 
