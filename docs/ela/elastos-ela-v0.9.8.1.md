@@ -25,7 +25,7 @@ wget https://raw.githubusercontent.com/elastos/Elastos.ELA.MiscTools/master/upgr
 chmod a+x ~/node/elastos-ela-v0.9.8.1.sh
 ```
 
-5. Execute node update script
+5. Execute sponsors update script
 
 ```bash
 ~/node/elastos-ela-v0.9.8.1.sh
