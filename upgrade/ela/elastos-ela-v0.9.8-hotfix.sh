@@ -89,7 +89,7 @@ update_node()
     cp -v elastos-ela-v0.9.8-hotfix-linux-x86_64/ela $SCRIPT_PATH/ela/
     cp -v elastos-ela-v0.9.8-hotfix-linux-x86_64/ela-cli $SCRIPT_PATH/ela/
     $SCRIPT_PATH/ela/ela-cli rollback --height 1832749
-    sleep 180
+    sleep 240
     echo_info "Starting ela..."
     $SCRIPT_PATH/node.sh ela start
     SHA_ELA_2=$(shasum $SCRIPT_PATH/ela/ela | cut -d' ' -f1)
