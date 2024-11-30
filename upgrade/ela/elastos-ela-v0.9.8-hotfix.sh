@@ -47,18 +47,21 @@ update_node()
   if [ "$(uname -m)" == "armv6l" ] || [ "$(uname -m)" == "armv7l" ] || [ "$(uname -m)" == "aarch64" ]; then
     echo "The current system architecture is ARM"
     echo_info "Downloading ela..."
-    wget https://download.elastos.io/elastos-ela/elastos-ela-v0.9.8/elastos-ela-v0.9.8-linux-arm64.tgz
-    tar xf elastos-ela-v0.9.8-linux-arm64.tgz
-    SHA_ELA_1=$(shasum elastos-ela-v0.9.8-linux-arm64/ela | cut -d' ' -f1)
+    wget https://download.elastos.io/elastos-ela/elastos-ela-v0.9.8-hotfix/elastos-ela-v0.9.8-hotfix-linux-arm64.tgz
+    tar xf elastos-ela-v0.9.8-hotfix-linux-arm64.tgz
+    SHA_ELA_1=$(elastos-ela-v0.9.8-hotfix-linux-arm64/ela | cut -d' ' -f1)
     echo_info "Stopping ela..."
     $SCRIPT_PATH/node.sh ela stop
+    sleep 30
     echo "backup ela and ela-cli"
     mv $SCRIPT_PATH/ela/ela $SCRIPT_PATH/ela/ela_backup
     mv $SCRIPT_PATH/ela/ela-cli $SCRIPT_PATH/ela/ela-cli_backup
     echo_info "Replacing ela and ela-cli..."
-    cp -v elastos-ela-v0.9.8-linux-arm64/ela $SCRIPT_PATH/ela/
-    cp -v elastos-ela-v0.9.8-linux-arm64/ela-cli $SCRIPT_PATH/ela/
+    cp -v elastos-ela-v0.9.8-hotfix-linux-arm64/ela $SCRIPT_PATH/ela/
+    cp -v elastos-ela-v0.9.8-hotfix-linux-arm64/ela-cli $SCRIPT_PATH/ela/
+    
     $SCRIPT_PATH/ela/ela-cli rollback --height 1832749
+    sleep 240
     echo_info "Starting ela..."
     $SCRIPT_PATH/node.sh ela start
     SHA_ELA_2=$(shasum $SCRIPT_PATH/ela/ela | cut -d' ' -f1)
@@ -68,7 +71,7 @@ update_node()
     else
       update_log "failed"
     fi
-    rm -rf elastos-ela-v0.9.8-linux-arm64.tgz elastos-ela-v0.9.8.sh elastos-ela-v0.9.8-linux-arm64
+    rm -rf elastos-ela-v0.9.8-hotfix-linux-arm64 elastos-ela-v0.9.8-hotfix-linux-arm64.tgz
     
   else
     echo "The current system architecture x86_64 by default。"
