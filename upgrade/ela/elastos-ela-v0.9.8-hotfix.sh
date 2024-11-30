@@ -80,6 +80,7 @@ update_node()
     echo_info "Stopping ela..."
     $SCRIPT_PATH/node.sh ela stop
     echo "backup ela and ela-cli"
+    sleep(45)
     mv $SCRIPT_PATH/ela/ela $SCRIPT_PATH/ela/ela_backup
     mv $SCRIPT_PATH/ela/ela-cli $SCRIPT_PATH/ela/ela-cli_backup
     
