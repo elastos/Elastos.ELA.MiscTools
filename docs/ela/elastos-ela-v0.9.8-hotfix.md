@@ -5,72 +5,42 @@ The upgrade mainly includes:
 - Fix some node height out of sync issues because fork
 
    
-## Automatic upgrade of the specified version
+##  Upgrade the ela data ,  Note: ela node in the "~/node/ela" path for example, if your ela node is not this path, please replace your ela node path
 ## Upgrade Steps
 1. Log in to the server
-2. Enter the node directory
-
-```bash
-cd ~/node/
-```
-
-3. Download node update script
-
-```bash
-wget https://raw.githubusercontent.com/elastos/Elastos.ELA.MiscTools/master/upgrade/ela/elastos-ela-v0.9.8.sh
-```
-
-4. Script permission changes
-
-```bash
-chmod a+x ~/node/elastos-ela-v0.9.8.sh
-```
-
-5. Execute node update script
-
-```bash
-~/node/elastos-ela-v0.9.8.sh
-```
-
-6. Check node status
-
-```bash
-$ ~/node/node.sh status
-```
-
-## Manual upgrade steps
-
-1. Download ela node
-
-```
-https://download.elastos.io/elastos-ela/elastos-ela-v0.9.8
-```
-
 2. Stop ela node
-3. Replace ela node
-4. Delete the checkpoints directory
+   
+```bash
+~/node/node.sh ela stop
+```
+3. Enter the ela node elastos directory
 
 ```bash
-$ rm -r ~/node/ela/elastos/data/checkpoints
+cd ~/node/ela/elastos
 ```
-5. **Copy  the "sponsors" file to working directory of the ela node**
-   
-   Copy the "sponsors" file from "elastos-ela/elastos-ela-v0.9.8" to the working directory of the ela node or configure the "config.json" file of ela node using "SponsorsFilePath" to specify the "sponsors" file path
-   
-```json  
-{
-    "Configuration": {
-        "DPoSConfiguration": {
-            "SponsorsFilePath": "/home/ela-4/node/sponsors"
-        }
-    }
-}
+
+4. Download node ela elastos data
+
+```bash
+wget https://chain-data-temp.elastos.io/ela-data-2024-11-30.tar.gz
 ```
-6. Start ela node
 
-   The first time you start the node will initialize the node, after it is completed, it will synchronize the block
-   height, this process will be determined by the server memory to complete the time, please wait patiently...
+5. Delete the elastos folder
 
-7. Check node status
+```bash
+rm -rf ~/node/ela/elastos/data
+```
+
+5. Unzip the ela-data-2024-11-30.tar.gz file
+
+```bash
+tar -zxvf ela-data-2024-11-30.tar.gz
+```
+
+6. Start the ela node
+
+```bash
+$ ~/node/node.sh start
+```
 
 
