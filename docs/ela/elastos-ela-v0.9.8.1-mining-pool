@@ -15,12 +15,12 @@ The upgrade mainly includes:
    Step 2: Delete the data file in the Elastos directory of the ela node.
    Step 3: Extract the downloaded file and restart the node after completion
 
- 2. Download ela node
+2. Download ela node
 
 ```
 https://download.elastos.io/elastos-ela/elastos-ela-v0.9.8.1
 ```
-2. Stop ela node
-3. Replace ela node
-4. Start ela node
-5. Check node status
+3. Stop ela node
+4. Replace ela node
+5. Start ela node
+6. Check node status
