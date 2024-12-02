@@ -1,1 +1,26 @@
+# The ELA v0.9.8.1 upgrade[20241202]
 
+The upgrade mainly includes:
+
+- fix the issue of submitting auxblock error during mining
+
+## Manual upgrade steps
+
+1. Replace data
+ Check node height: query node height by https://ela.elastos.io，if node height is consistent. omit this step.
+ if not consistent，do replace data as belos:
+ We need to replace the data from this link: https://chain-data-temp.elastos.io/ela-data-2024-11-30.tar.gz
+ Operation steps:
+   Step 1: Stop the node, switch to the Elastos directory of the ela node, and download the data https://chain-data-temp.elastos.io/ela-data-2024-11-30.tar.gz
+   Step 2: Delete the data file in the Elastos directory of the ela node.
+   Step 3: Extract the downloaded file and restart the node after completion
+
+ 2. Download ela node
+
+```
+https://download.elastos.io/elastos-ela/elastos-ela-v0.9.8.1
+```
+2. Stop ela node
+3. Replace ela node
+4. Start ela node
+5. Check node status
