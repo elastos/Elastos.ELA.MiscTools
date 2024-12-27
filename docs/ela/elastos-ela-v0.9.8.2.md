@@ -30,7 +30,7 @@ $ ~/node/node.sh status
 ```
 
 
-## Automatic upgrade of the specified version
+## Manual upgrade of the specified version
 
 1. Log in to the server
 2. Enter the node directory
