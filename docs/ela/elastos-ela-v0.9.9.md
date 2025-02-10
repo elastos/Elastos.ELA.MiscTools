@@ -1,9 +1,11 @@
 
-# The ELA v0.9.8.2 upgrade[20241227]
+# The ELA v0.9.9 upgrade[20250220]
 
 The upgrade mainly includes:
 
 - Resolve the issue of fork and reorganization
+- Adjustment of consensus mechanism
+- Illegal mechanism activated
 
 ## Automatic upgrade using node.sh
 
@@ -34,7 +36,7 @@ $ ~/node/node.sh status
 1. Download ela node
 
 ```
-https://download.elastos.io/elastos-ela/elastos-ela-v0.9.8.2
+https://download.elastos.io/elastos-ela/elastos-ela-v0.9.9
 ```
 
 2. Stop ela node
