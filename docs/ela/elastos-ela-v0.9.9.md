@@ -13,7 +13,7 @@ The upgrade mainly includes:
 2. Update the latest ela node
 
 ```bash
-$ ~/node/node.sh ela update
+~/node/node.sh ela update
 ```
 
 3. Start ela node
@@ -22,13 +22,13 @@ $ ~/node/node.sh ela update
    height, this process will be determined by the server memory to complete the time, please wait patiently...
 
 ```bash
-$ ~/node/node.sh ela start
+~/node/node.sh ela start
 ```
 
 4. Check node status
 
 ```bash
-$ ~/node/node.sh status
+~/node/node.sh status
 ```
 
 ## Manual upgrade steps
