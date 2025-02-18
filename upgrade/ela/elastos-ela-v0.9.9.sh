@@ -24,7 +24,7 @@ update_log()
   local time=$(date "+%Y-%m-%d %H:%M:%S")
   echo_info "$time">>$SCRIPT_PATH/update.log
   echo_info "==========">>$SCRIPT_PATH/update.log
-  echo_info "Update ela to elastos-ela-v0.9.8">>$SCRIPT_PATH/update.log
+  echo_info "Update ela to elastos-ela-v0.9.9">>$SCRIPT_PATH/update.log
   echo_info "">>$SCRIPT_PATH/update.log
   if [ $1 == "succeeded" ]; then
       echo_info "$time update of ela succeeded!"
@@ -47,15 +47,13 @@ update_node()
   if [ "$(uname -m)" == "armv6l" ] || [ "$(uname -m)" == "armv7l" ] || [ "$(uname -m)" == "aarch64" ]; then
     echo "The current system architecture is ARM"
     echo_info "Downloading ela..."
-    wget https://download.elastos.io/elastos-ela/elastos-ela-v0.9.8/elastos-ela-v0.9.8-linux-arm64.tgz
-    tar xf elastos-ela-v0.9.8-linux-arm64.tgz
-    SHA_ELA_1=$(shasum elastos-ela-v0.9.8-linux-arm64/ela | cut -d' ' -f1)
+    wget https://download.elastos.io/elastos-ela/elastos-ela-v0.9.9/elastos-ela-v0.9.9-linux-arm64.tgz
+    tar xf elastos-ela-v0.9.9-linux-arm64.tgz
+    SHA_ELA_1=$(shasum elastos-ela-v0.9.9-linux-arm64/ela | cut -d' ' -f1)
     echo_info "Stopping ela..."
     $SCRIPT_PATH/node.sh ela stop
     echo_info "Replacing ela..."
-    cp -v elastos-ela-v0.9.8-linux-arm64/ela $SCRIPT_PATH/ela/
-    echo_info "Copy sponsors file..."
-    cp -v elastos-ela-v0.9.8-linux-arm64/sponsors $SCRIPT_PATH/ela/
+    cp -v elastos-ela-v0.9.9-linux-arm64/ela $SCRIPT_PATH/ela/
     if [ -d "$SCRIPT_PATH/ela/elastos/data/checkpoints" ]; then
       echo_info "The checkpoints file is being deleted, it will take a long time to initialize the data when starting the ELA node for the first time, please don’t worry!"
       rm -rf $SCRIPT_PATH/ela/elastos/data/checkpoints
@@ -70,21 +68,19 @@ update_node()
     else
       update_log "failed"
     fi
-    rm -rf elastos-ela-v0.9.8-linux-arm64.tgz elastos-ela-v0.9.8.sh elastos-ela-v0.9.8-linux-arm64
+    rm -rf elastos-ela-v0.9.9-linux-arm64.tgz elastos-ela-v0.9.9.sh elastos-ela-v0.9.9-linux-arm64
     
   else
     echo "The current system architecture x86_64 by default。"
     echo_info "Downloading ela..."
-    wget https://download.elastos.io/elastos-ela/elastos-ela-v0.9.8/elastos-ela-v0.9.8-linux-x86_64.tgz
-    tar xf elastos-ela-v0.9.8-linux-x86_64.tgz
-    SHA_ELA_1=$(shasum elastos-ela-v0.9.8-linux-x86_64/ela | cut -d' ' -f1)
+    wget https://download.elastos.io/elastos-ela/elastos-ela-v0.9.9/elastos-ela-v0.9.9-linux-x86_64.tgz
+    tar xf elastos-ela-v0.9.9-linux-x86_64.tgz
+    SHA_ELA_1=$(shasum elastos-ela-v0.9.9-linux-x86_64/ela | cut -d' ' -f1)
 
     echo_info "Stopping ela..."
     $SCRIPT_PATH/node.sh ela stop
     echo_info "Replacing ela..."
-    cp -v elastos-ela-v0.9.8-linux-x86_64/ela $SCRIPT_PATH/ela/
-    echo_info "Copy sponsors file..."
-    cp -v elastos-ela-v0.9.8-linux-x86_64/sponsors $SCRIPT_PATH/ela/
+    cp -v elastos-ela-v0.9.9-linux-x86_64/ela $SCRIPT_PATH/ela/
     if [ -d "$SCRIPT_PATH/ela/elastos/data/checkpoints" ]; then
       echo_info "The checkpoints file is being deleted, it will take a long time to initialize the data when starting the ELA node for the first time, please don’t worry!"
       rm -rf $SCRIPT_PATH/ela/elastos/data/checkpoints
@@ -97,7 +93,7 @@ update_node()
     else
       update_log "failed"
     fi
-    rm -rf elastos-ela-v0.9.8-linux-x86_64.tgz elastos-ela-v0.9.8.sh elastos-ela-v0.9.8-linux-x86_64    
+    rm -rf elastos-ela-v0.9.9-linux-x86_64.tgz elastos-ela-v0.9.9.sh elastos-ela-v0.9.9-linux-x86_64    
   fi
 }
 
