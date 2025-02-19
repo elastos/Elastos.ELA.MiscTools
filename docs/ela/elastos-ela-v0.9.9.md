@@ -54,11 +54,23 @@ https://download.elastos.io/elastos-ela/elastos-ela-v0.9.9
 ```bash
 $ rm -r ~/node/ela/elastos/data/checkpoints
 ```
-
-5. Start ela node
+5. Copy  the "sponsors" file to working directory of the ela node
+   
+   Copy the "sponsors" file from "elastos-ela/elastos-ela-v0.9.8" to the working directory of the ela node or configure the "config.json" file of ela node using "SponsorsFilePath" to specify the "sponsors" file path
+   
+```json  
+{
+    "Configuration": {
+        "DPoSConfiguration": {
+            "SponsorsFilePath": "/home/ela-4/node/sponsors"
+        }
+    }
+}
+```
+6. Start ela node
 
    The first time you start the node will initialize the node, after it is completed, it will synchronize the block
    height, this process will be determined by the server memory to complete the time, please wait patiently...
 
-6. Check node status
+7. Check node status
 
