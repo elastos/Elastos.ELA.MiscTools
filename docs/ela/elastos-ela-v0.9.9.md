@@ -41,10 +41,12 @@ $ ~/node/node.sh status
 
 ## Manual upgrade steps
 
-1. Download ela node
+1. Download ela node and sponsors file
 
 ```
-https://download.elastos.io/elastos-ela/elastos-ela-v0.9.9
+wget https://download.elastos.io/elastos-ela/elastos-ela-v0.9.9
+wget https://download.elastos.io/elastos-ela/elastos-ela-v0.9.9/sponsors
+
 ```
 
 2. Stop ela node
@@ -56,7 +58,7 @@ $ rm -r ~/node/ela/elastos/data/checkpoints
 ```
 5. Copy  the "sponsors" file to working directory of the ela node
    
-   Copy the "sponsors" file from "elastos-ela/elastos-ela-v0.9.8" to the working directory of the ela node or configure the "config.json" file of ela node using "SponsorsFilePath" to specify the "sponsors" file path
+   Copy the "sponsors" file that has downloaded to the working directory of the ela node or configure the "config.json" file of ela node using "SponsorsFilePath" to specify the "sponsors" file path
    
 ```json  
 {
