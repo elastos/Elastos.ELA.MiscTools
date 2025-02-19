@@ -2,9 +2,9 @@
 
 The upgrade mainly includes:
 
-- Resolve the issue of fork and reorganization
-- Adjustment of consensus mechanism
-- Illegal mechanism activated
+- Resolve the issue of  reorganization
+- Adjustment of DPOS consensus mechanism
+- Activate the Malicious Behavior Penalty Mechanism for illegal
    
 ## Automatic upgrade of the specified version
 ## Upgrade Steps
