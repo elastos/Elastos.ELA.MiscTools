@@ -36,7 +36,7 @@ chmod a+x ~/node/elastos-ela-v0.9.9.sh
 6. Check node status
 
 ```bash
-$ ~/node/node.sh status
+ ~/node/node.sh status
 ```
 
 ## Manual upgrade steps
