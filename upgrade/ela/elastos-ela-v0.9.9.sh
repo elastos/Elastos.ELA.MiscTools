@@ -57,7 +57,7 @@ update_node()
     echo_info "Downloading sponsors file..."
     wget https://download.elastos.io/elastos-ela/elastos-ela-v0.9.9/sponsors
     echo_info "Copy sponsors file...to ela node working directory"
-    mv ./sponsors $SCRIPT_PATH/ela/
+    mv -f ./sponsors $SCRIPT_PATH/ela/
     echo_info "Deleting ela checkpoints..."
     if [ -d "$SCRIPT_PATH/ela/elastos/data/checkpoints" ]; then
       echo_info "The checkpoints file is being deleted, it will take a long time to initialize the data when starting the ELA node for the first time, please don’t worry!"
@@ -89,7 +89,7 @@ update_node()
     echo_info "Downloading sponsors file..."
     wget https://download.elastos.io/elastos-ela/elastos-ela-v0.9.9/sponsors
     echo_info "Copy sponsors file...to ela node working directory"
-    mv ./sponsors $SCRIPT_PATH/ela/
+    mv -f ./sponsors $SCRIPT_PATH/ela/
     echo_info "Deleting ela checkpoints..."
     if [ -d "$SCRIPT_PATH/ela/elastos/data/checkpoints" ]; then
       echo_info "The checkpoints file is being deleted, it will take a long time to initialize the data when starting the ELA node for the first time, please don’t worry!"
