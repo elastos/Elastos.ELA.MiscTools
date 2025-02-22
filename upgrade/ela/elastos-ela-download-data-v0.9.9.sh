@@ -66,7 +66,7 @@ update_node()
     echo_info "Downloading ela data，it will take some time, don't worry"
     wget https://node-data.elastos.io/ela/ela-data-2025-02-22.tgz
     echo_info "Extract ela data to ela node elastos directory，it will take some time, don't worry"
-    tar -xzvf archive.tgz -C $SCRIPT_PATH/ela/elastos
+    tar -xzvf ela-data-2025-02-22.tgz -C $SCRIPT_PATH/ela/elastos
     
     echo_info "Starting ela..."
     $SCRIPT_PATH/node.sh ela start
@@ -102,7 +102,7 @@ update_node()
     echo_info "Downloading ela data，it will take some time, don't worry"
     wget https://node-data.elastos.io/ela/ela-data-2025-02-22.tgz
     echo_info "Extract ela data to ela node elastos directory，it will take some time, don't worry"
-    tar -xzvf archive.tgz -C $SCRIPT_PATH/ela/elastos
+    tar -xzvf ela-data-2025-02-22.tgz -C $SCRIPT_PATH/ela/elastos
     echo_info "Starting ela..."
     $SCRIPT_PATH/node.sh ela start
     SHA_ELA_2=$(shasum $SCRIPT_PATH/ela/ela | cut -d' ' -f1)
