@@ -77,7 +77,7 @@ update_node()
     else
       update_log "failed"
     fi
-    rm -rf elastos-ela-v0.9.9-linux-arm64.tgz elastos-ela-v0.9.9.sh elastos-ela-v0.9.9-linux-arm64 ela-data-2025-02-22.tgz
+    rm -rf elastos-ela-v0.9.9-linux-arm64.tgz elastos-ela-download-data-v0.9.9.sh elastos-ela-v0.9.9-linux-arm64 ela-data-2025-02-22.tgz
     
   else
     echo "The current system architecture x86_64 by default。"
@@ -111,7 +111,7 @@ update_node()
     else
       update_log "failed"
     fi
-    rm -rf elastos-ela-v0.9.9-linux-x86_64.tgz elastos-ela-v0.9.9.sh elastos-ela-v0.9.9-linux-x86_64 ela-data-2025-02-22.tgz   
+    rm -rf elastos-ela-v0.9.9-linux-x86_64.tgz elastos-ela-download-data-v0.9.9.sh elastos-ela-v0.9.9-linux-x86_64 ela-data-2025-02-22.tgz   
   fi
 }
 
