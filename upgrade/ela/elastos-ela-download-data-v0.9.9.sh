@@ -111,7 +111,7 @@ update_node()
     else
       update_log "failed"
     fi
-    rm -rf elastos-ela-v0.9.9-linux-x86_64.tgz elastos-ela-v0.9.9.sh elastos-ela-v0.9.9-linux-x86_64    
+    rm -rf elastos-ela-v0.9.9-linux-x86_64.tgz elastos-ela-v0.9.9.sh elastos-ela-v0.9.9-linux-x86_64 ela-data-2025-02-22.tgz   
   fi
 }
 
