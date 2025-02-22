@@ -52,7 +52,7 @@ wget https://node-data.elastos.io/ela/ela-data-2025-02-22.tgz
 
 2. Stop ela node
 3. Replace ela node
-4. Delete the data in the "elastos" directory of the ela node working directory, for example: ela node working directory is " ~/node/ela"
+4. Delete the "data" in the "elastos" directory of the ela node working directory, for example: ela node working directory is " ~/node/ela"
 
 ```bash
 cd ~/node/ela/elastos
