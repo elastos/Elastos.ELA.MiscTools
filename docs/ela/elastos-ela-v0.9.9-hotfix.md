@@ -1,8 +1,8 @@
-# The Arbiter config.json upgrade[20250510]
+# The ELA v0.9.9 hotfix upgrade[20250510]
 
 The upgrade mainly includes:
 
-- Configure the arbiter config.json file to support a new sidechain.
+- Solve the main chain issue.
 
 ## Automatic upgrade using node.sh
 
