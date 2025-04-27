@@ -36,14 +36,10 @@ $ ~/node/node.sh status
 1. Download ela node
 
 ```
-https://download.elastos.io/elastos-ela/elastos-ela-v0.9.9
+https://download.elastos.io/elastos-ela/elastos-ela-v0.9.9-hotfix
 ```
 
 2. Stop ela node
 3. Replace ela node
 4. Start ela node
-
-   The first time you start the node will initialize the node, after it is completed, it will synchronize the block
-   height, this process will be determined by the server memory to complete the time, please wait patiently...
-
 5. Check node status
