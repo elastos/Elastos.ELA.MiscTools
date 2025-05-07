@@ -3,7 +3,8 @@
 The upgrade mainly includes:
 
 - Configure the arbiter config.json file to support a new sidechain.
-
+  
+Note: Before upgrading, please ensure the following ports are open: 20650, 20652, 20656, 20658, 20659
 ## Automatic upgrade using node.sh
 
 1. Log in to the server
