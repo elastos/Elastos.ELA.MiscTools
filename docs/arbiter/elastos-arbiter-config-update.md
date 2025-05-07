@@ -16,12 +16,12 @@ The upgrade mainly includes:
 3. Initialize the new sidechain
 
 ```bash
- ~/node/node.sh pgp init
+ ~/node/node.sh eco init
 ```
 4. Initialize the new sidechain oracle
 
 ```bash
- ~/node/node.sh pgp-oracle init
+ ~/node/node.sh eco-oracle init
 ```
 5. Update the arbiter config.json configuration file
 
