@@ -29,7 +29,15 @@ Note: Before upgrading, please ensure the following ports are open: 20650, 20652
 ```bash
  ~/node/node.sh arbiter modify_configfile
 ```
-6. Restart the arbiter node
+6. Stat the eco sidechain
+```bash
+ ~/node/node.sh eco start
+```
+7. Stat the eco-oracle
+```bash
+ ~/node/node.sh eco-oracle start
+``` 
+8. Restart the arbiter node
 
 ```bash
  ~/node/node.sh arbiter start
