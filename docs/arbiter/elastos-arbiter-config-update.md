@@ -15,6 +15,7 @@ Note: Before upgrading, please ensure the following ports are open: 20650, 20652
 ```
 
 3. Initialize the new sidechain
+   Note: Press Enter to generate a random password by default, or enter a password of your choice to confirm 
 
 ```bash
  ~/node/node.sh eco init
