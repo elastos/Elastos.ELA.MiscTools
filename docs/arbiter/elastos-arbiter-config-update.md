@@ -5,6 +5,18 @@ The upgrade mainly includes:
 - Configure the arbiter config.json file to support a new sidechain.
   
 Note: Before upgrading, please ensure the following ports are open: 20650, 20652, 20656, 20658, 20659
+
+ECO sidechain ：The ports and types that need to be opened are as follows:
+
+ECO-Bootnode：       | udp type      ｜ 20650
+
+ECO-Oracle：         | TCP type      ｜ 20652
+
+ECO                  | TCP type      | 20656  
+
+ECO                  | TCP+UDP type  | 20658 
+
+ECO                  | TCP  type     | 20659  
 ## Automatic upgrade using node.sh
 
 1. Log in to the server
