@@ -36,7 +36,7 @@ The upgrade mainly includes:
 1. Download ela node
 
 ```
-https://download.elastos.io/elastos-ela/elastos-ela-v0.9.9-hotfix
+https://download.elastos.io/elastos-ela/elastos-ela-v0.9.9.1-hotfix
 ```
 
 2. Stop ela node
