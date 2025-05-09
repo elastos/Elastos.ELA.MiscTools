@@ -2,7 +2,7 @@
 
 The upgrade mainly includes:
 
-- Solve the main chain issue.
+- Fixed the potential abnormal voting behavior of arbiters
 
 ## Automatic upgrade using node.sh
 
