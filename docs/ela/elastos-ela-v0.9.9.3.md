@@ -28,7 +28,7 @@ The upgrade mainly includes:
 4. Check node status
 
 ```bash
-  ~/node/node.sh status
+  ~/node/node.sh ela status
 ```
 
 ## Manual upgrade steps
