@@ -1,8 +1,8 @@
-# The ELA v0.9.9.2 upgrade[20250715]
+# The ELA v0.9.9.3 upgrade[20250808]
 
 The upgrade mainly includes:
 
-- Malicious nodes will be temporarily suspended with penalty functionality disabled
+- Fixed an issue where illegal proposals could occur due to occasional low server performance
 
 ## Automatic upgrade using node.sh
 
@@ -36,7 +36,7 @@ The upgrade mainly includes:
 1. Download ela node
 
 ```
-https://download.elastos.io/elastos-ela/elastos-ela-v0.9.9.2/
+https://download.elastos.io/elastos-ela/elastos-ela-v0.9.9.3/
 ```
 
 2. Stop ela node
