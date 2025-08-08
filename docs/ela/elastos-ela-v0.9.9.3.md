@@ -7,12 +7,6 @@ The upgrade mainly includes:
 ## Automatic upgrade using node.sh
 
 1. Log in to the server
-2. Update the latest node.sh
-
-```bash
-  ~/node/node.sh update_script
-```
-
 2. Update the latest ela node
 
 ```bash
