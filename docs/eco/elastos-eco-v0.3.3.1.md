@@ -11,13 +11,13 @@ The elastos-eco-v0.0.3.1 version has been released. The upgrade mainly includes:
 2. Update the latest eco node
 
 ```bash
-$ ~/node/node.sh eco update
+~/node/node.sh eco update
 ```
 
 3. Start eco node
 
 ```bash
-$ ~/node/node.sh eco start
+~/node/node.sh eco start
 ```
 
 
