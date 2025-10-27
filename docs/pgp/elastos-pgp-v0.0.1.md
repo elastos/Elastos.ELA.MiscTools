@@ -2,8 +2,8 @@
 
 The upgrade mainly includes:
 
-- Configure the arbiter config.json file to support a new sidechain.
-- Add PGP chain
+- Configure the arbiter config.json file to support a new pgp sidechain.
+- Setup pgp chain
   
 Note: Before upgrading, please ensure the following ports are open: 20660, 20662, 20666, 20668, 20669
 
@@ -27,30 +27,33 @@ PGP                  | TCP  type     | 20669
   ~/node/node.sh update_script
 ```
 
-3. Initialize the new sidechain
+3. Initialize the pgp sidechain
    
-   Note: Press Enter to generate a random password by default, or enter a password of your choice to confirm 
+   Note:
+   - Press Enter to generate a random password by default, or enter a password of your choice to confirm
+   - You must input an alternative pgp reward address that is not different with keystore address
+   
 
 ```bash
- ~/node/node.sh eco init
+ ~/node/node.sh pgp init
 ```
-4. Initialize the new sidechain oracle
+4. Initialize the pgp sidechain oracle
 
 ```bash
- ~/node/node.sh eco-oracle init
+ ~/node/node.sh pgp-oracle init
 ```
 5. Update the arbiter config.json configuration file
 
 ```bash
  ~/node/node.sh arbiter modify_configfile
 ```
-6. Stat the eco sidechain
+6. Stat the pgp sidechain
 ```bash
- ~/node/node.sh eco start
+ ~/node/node.sh pgp start
 ```
-7. Stat the eco-oracle
+7. Stat the pgp-oracle
 ```bash
- ~/node/node.sh eco-oracle start
+ ~/node/node.sh pgp-oracle start
 ``` 
 8. Restart the arbiter node
 
