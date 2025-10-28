@@ -2,12 +2,12 @@
 
 The upgrade mainly includes:
 
-- Configure the arbiter config.json file to support a new pgp sidechain.
+- Configure the arbiter config.json file to support a new pgp chain.
 - Setup pgp chain
   
 Note: Before upgrading, please ensure the following ports are open: 20660, 20662, 20666, 20668, 20669
 
-PGP sidechain ：The ports and types that need to be opened are as follows:
+PGP chain ：The ports and types that need to be opened are as follows:
 
 PGP-Bootnode：       | udp type      ｜ 20660
 
@@ -27,7 +27,7 @@ PGP                  | TCP  type     | 20669
   ~/node/node.sh update_script
 ```
 
-3. Initialize the pgp sidechain
+3. Initialize the pgp chain
    
    Note:
    - Press Enter to generate a random password by default, or enter a password of your choice to confirm
@@ -37,7 +37,7 @@ PGP                  | TCP  type     | 20669
 ```bash
  ~/node/node.sh pgp init
 ```
-4. Initialize the pgp sidechain oracle
+4. Initialize the pgp chain oracle
 
 ```bash
  ~/node/node.sh pgp-oracle init
@@ -47,7 +47,7 @@ PGP                  | TCP  type     | 20669
 ```bash
  ~/node/node.sh arbiter modify_configfile
 ```
-6. Stat the pgp sidechain
+6. Stat the pgp chain
 ```bash
  ~/node/node.sh pgp start
 ```
