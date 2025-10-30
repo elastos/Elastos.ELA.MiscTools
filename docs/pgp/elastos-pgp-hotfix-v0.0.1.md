@@ -50,8 +50,7 @@ rm -rf  ~/node/pgp/data/pgp
 7. Update the arbiter config.json configuration file
 
 ```bash
-sed -i 's/00b7957fbc9fa62e86d6e664299bebc9a939f108fd015f8de07ce33f4136175e/a3fdd5142d73a38b5db3f729cee4bcf902591831e46fdab4c1e222caf198abf4 
-/g' ~/node/arbiter/config.json
+sed -i 's/00b7957fbc9fa62e86d6e664299bebc9a939f108fd015f8de07ce33f4136175e/a3fdd5142d73a38b5db3f729cee4bcf902591831e46fdab4c1e222caf198abf4/g' ~/node/arbiter/config.json
 ```
 8. Stat the pgp chain
    
