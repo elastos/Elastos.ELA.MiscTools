@@ -57,7 +57,7 @@ sed -i 's/00b7957fbc9fa62e86d6e664299bebc9a939f108fd015f8de07ce33f4136175e/a3fdd
 ```bash
 rm -rf  ~/node/arbiter/elastos_arbiter/data/arbiter/PGP_sideChainCache.db
 ```    
-10. Stat the pgp chain
+9. Stat the pgp chain
    
 ```bash
 ~/node/node.sh pgp start
