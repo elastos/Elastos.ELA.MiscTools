@@ -25,12 +25,12 @@ PGP                  | TCP  type     | 20669
 2. Update the latest node.sh
    
 ```bash
-  ~/node/node.sh update_script
+~/node/node.sh update_script
 ```
 3. Stop pgp chain node
    
 ```bash
-  ~/node/node.sh pgp stop
+~/node/node.sh pgp stop
 ```   
 4. Delete pgp chain data
    
@@ -40,27 +40,27 @@ rm -rf  ~/node/pgp/data/pgp
 5. Update pgp compile program
    
 ```bash
-  ~/node/node.sh pgp update
+~/node/node.sh pgp update
 ```
 6. Stop arbiter node
    
 ```bash
-  ~/node/node.sh arbiter stop
+~/node/node.sh arbiter stop
 ```   
 7. Update the arbiter config.json configuration file
 
 ```bash
- sed -i 's/00b7957fbc9fa62e86d6e664299bebc9a939f108fd015f8de07ce33f4136175e/a3fdd5142d73a38b5db3f729cee4bcf902591831e46fdab4c1e222caf198abf4 
+sed -i 's/00b7957fbc9fa62e86d6e664299bebc9a939f108fd015f8de07ce33f4136175e/a3fdd5142d73a38b5db3f729cee4bcf902591831e46fdab4c1e222caf198abf4 
 /g' ~/node/arbiter/config.json
 ```
 8. Stat the pgp chain
    
 ```bash
- ~/node/node.sh pgp start
+~/node/node.sh pgp start
 ```
 9. Restart the arbiter node
 
 ```bash
- ~/node/node.sh arbiter start
+~/node/node.sh arbiter start
 ```
 
