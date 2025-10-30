@@ -52,12 +52,17 @@ rm -rf  ~/node/pgp/data/pgp
 ```bash
 sed -i 's/00b7957fbc9fa62e86d6e664299bebc9a939f108fd015f8de07ce33f4136175e/a3fdd5142d73a38b5db3f729cee4bcf902591831e46fdab4c1e222caf198abf4/g' ~/node/arbiter/config.json
 ```
-8. Stat the pgp chain
+8. Delete the pgp data in the arbiter node
+   
+```bash
+rm -rf  ~/node/arbiter/elastos_arbiter/data/arbiter/PGP_sideChainCache.db
+```    
+10. Stat the pgp chain
    
 ```bash
 ~/node/node.sh pgp start
 ```
-9. Restart the arbiter node
+10. Restart the arbiter node
 
 ```bash
 ~/node/node.sh arbiter start
