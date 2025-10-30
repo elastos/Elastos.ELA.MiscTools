@@ -42,24 +42,9 @@ rm -rf  ~/node/pgp/data/pgp
 ```bash
 ~/node/node.sh pgp update
 ```
-6. Stop arbiter node
-   
-```bash
-~/node/node.sh arbiter stop
-```   
-7. Delete the pgp data in the arbiter node
-   
-```bash
-rm -rf  ~/node/arbiter/elastos_arbiter/data/arbiter/PGP_sideChainCache.db
-```    
-8. Stat the pgp chain
+6. Stat the pgp chain
    
 ```bash
 ~/node/node.sh pgp start
-```
-9. Restart the arbiter node
-
-```bash
-~/node/node.sh arbiter start
 ```
 
