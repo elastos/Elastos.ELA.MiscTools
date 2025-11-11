@@ -14,12 +14,6 @@ The elastos-esc-v0.2.6 version has been released. The upgrade mainly includes:
 ~/node/node.sh esc update
 ```
 
-3. Start esc node
-
-```bash
-~/node/node.sh esc start
-```
-
 
 ## Manual upgrade steps
 
