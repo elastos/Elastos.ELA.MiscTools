@@ -2,7 +2,7 @@
 
 The elastos-esc-v0.2.6 version has been released. The upgrade mainly includes:
 
--  Synchronizing Main Chain SPV Optimization。
+- Synchronizing Main Chain SPV Optimization。
 
 
 ## Automatic upgrade steps
