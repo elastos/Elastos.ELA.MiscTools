@@ -1,6 +1,6 @@
 # The EID v0.2.4/upgrade[20251111]
 
-The elastos-eid-v0.2.4 version has been released. The ueidrade mainly includes:
+The elastos-eid-v0.2.4 version has been released. The upgrade mainly includes:
 
 -  Synchronizing Main Chain SPV Optimization。
 
