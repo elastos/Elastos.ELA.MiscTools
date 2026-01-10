@@ -44,5 +44,13 @@ https://download.elastos.io/elastos-esc/elastos-esc-v0.2.7/
 2. Stop esc node
 3. Replace esc node
 4. Start esc node
-5. 
+5. Download esc-oracle
+
+```bash
+https://download.elastos.io/elastos-esc-oracle/elastos-esc-oracle-v0.2.7
+```
+
+6. Close esc-oracle
+7. Replace the js file of esc-oracle
+8. Start esc-oracle
 
