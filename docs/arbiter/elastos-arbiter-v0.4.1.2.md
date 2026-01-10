@@ -1,4 +1,4 @@
-# The Arbiter v0.4.1。2 upgrade[20260110]
+# The Arbiter v0.4.1.2 upgrade[20260110]
 
 The elastos-arbiter-v0.4.1.2 version has been released. The upgrade mainly includes:
 
