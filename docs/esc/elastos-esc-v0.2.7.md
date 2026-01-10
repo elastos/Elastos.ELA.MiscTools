@@ -14,10 +14,22 @@ The elastos-esc-v0.2.7 version has been released. The upgrade mainly includes:
 ~/node/node.sh esc update
 ```
 
-3. Start esc status
+3. Check esc status
 
 ```bash
 ~/node/node.sh esc status
+```
+
+4. Update the latest esc-oracle
+
+```bash
+~/node/node.sh esc-oracle update
+```
+
+5. Check esc-oracle status
+
+```bash
+~/node/node.sh esc-oracle status
 ```
 
 
@@ -32,4 +44,5 @@ https://download.elastos.io/elastos-esc/elastos-esc-v0.2.7/
 2. Stop esc node
 3. Replace esc node
 4. Start esc node
+5. 
 
